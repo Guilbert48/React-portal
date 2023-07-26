@@ -218,29 +218,41 @@ menu h1 a{
   font-family: 'Open Sans', sans-serif;
   font-size: 5rem;
 }
-.testee{
+.grid{
   display: grid;
   grid-template-columns: 2fr 1fr;
   justify-content: space-between;
 }
-.equipes-section h1{
-  display: flex;
-  justify-content: center;
-}
+
 .equipes-section{
-  max-height: 400px;
-}
-.equipes a img{
-  width: 500px;
-  height: 40rem;
-}
-.equipes{
   display: flex;
-  margin-top: 30px;
   justify-content: center;
+  flex-direction: row;
+}
+.equipes-content{
+  padding-top: 10rem;
+  display: flex; 
+  max-width: 120rem;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+}
+
+.equipes-content img{
+  width: 100%;
   flex-wrap: wrap;
 }
-.content{
-  padding-top: 90px;
+
+.equipes1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+}
+.equipes2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+
 }
