@@ -6,6 +6,7 @@
   --light-gray-collor: #eee;
   --gap: 20rem;
 }
+
 /*
   font-family: 'Montserrat', sans-serif;
   font-family: 'Open Sans', sans-serif;
@@ -16,7 +17,6 @@ html{
 body{
   font-family: 'Open Sans', sans-serif;
   font-size: 2rem;
-  
 }
 .blue-bg{
   background-image: url(../img/mainBg2.svg);
@@ -63,6 +63,7 @@ h1{
 }
 .section{
   min-height: 100vh;
+  min-width: 100;
 }
 .barra-menu{
   background-color: var(--hover-collor);
@@ -227,32 +228,70 @@ menu h1 a{
 .equipes-section{
   display: flex;
   justify-content: center;
-  flex-direction: row;
-}
-.equipes-content{
-  padding-top: 10rem;
-  display: flex; 
-  max-width: 120rem;
   flex-direction: column;
   align-items: center;
+}
+.equipes-content{
+  display: flex;
+  align-items: center;
+  max-width: 120rem;
   justify-content: center;
+  flex-direction: column;
+  
 }
 
-.equipes-content img{
-  width: 100%;
+.equipes-content-img{
+  display: flex; 
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
-.equipes1{
+.equipe img{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 85%;
+  width: 100%;
+  
 }
-.equipes2{
+.equipe{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 85%;
+  width: 35rem;
+}
 
+
+.equipe-container{
+  width: 35rem;
+  position: relative;
+  cursor: pointer;
+}
+.equipe-container:hover{
+  transform: scale(0.9);
+  transition: all .4s;
+}
+.equipe-container:hover .card-text{
+  visibility: visible;
+  transform: scale(0.9);
+  transition: all .4s;
+}
+.card-text{
+  padding: 10rem;
+  font-size: 1.2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #181334;
+  color: #ffffff;
+  opacity: 0.9;
+  width: 35rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  visibility: hidden;
+  border-radius: 50% 20% / 10% 40%;
 }
