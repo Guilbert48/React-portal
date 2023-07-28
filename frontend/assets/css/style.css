@@ -295,3 +295,18 @@ menu h1 a{
   visibility: hidden;
   border-radius: 50% 20% / 10% 40%;
 }
+
+.card-text button{
+  width: 15rem;
+  height: 5rem;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.card-text button:hover{
+  transform: scale(0.8);
+  transition: .2s;
+  background-color: #c7c2e1;
+  color: #020202;
+}
