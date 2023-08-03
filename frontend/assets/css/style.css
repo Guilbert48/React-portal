@@ -47,6 +47,12 @@ h1{
   padding: 0;
   box-sizing: border-box;
 }
+.hamburguer i{
+  color: aliceblue;
+  font-size: 3.3rem;
+  cursor: pointer;
+}
+
 .main-bg{
   background-size: cover;
   background-position: center center;
@@ -77,22 +83,13 @@ h1{
 
 }
 .menu{
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+  background-color: var(--primary-collor);
   width: 100%;
   border-bottom: 0.02px solid var(--light-gray-collor);
-  z-index: 1;
+  padding: 1.2rem;
 }
-.menu h1{
-  color: var(--primary-collor);
-  font-size: 2.3rem;
-  
-}
-menu h1 a{
-  color: inherit;
-}
+
+
 .menu ul{
   list-style: none;
   display: flex;
@@ -102,6 +99,7 @@ menu h1 a{
   padding: 2rem;
   font-size: 1.8rem;
   position: relative;
+  color: aliceblue;
 }
 
 .menu ul li a::after{
@@ -118,31 +116,36 @@ menu h1 a{
   width: 50%;
   left: 25%;
 }
+
 .menu-content{
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 0;
   padding-bottom: 0;
+  
+}
+.menu-content nav ul li{
+  color: #020202;
 }
 .img-class a h1 img{
-  width: 25rem;
-  height: 7rem;
+  width: 180px;
+  height: 60px;
 }
 .down{
   display: block;
 }
 .container-carrossel{
-  margin-top: 7rem;
+  margin-top: -11px;
+  
 }
 .container-carrossel h1{
-  color: #0a0a0a;
+  color: #5f3737;
 }
 .header{
   align-items: center;
-  background-color: #1f1a3b;
-  background-image: url(../img/Sprinkle\ \(3\).svg);
 }
+
 .section-noticias{
   width: 100%;
 }
@@ -153,12 +156,13 @@ menu h1 a{
   margin-top: 2rem;
 }
 .line h1{
-  color: #FFF;
+  color: var(--primary-collor);
+  font-family: sans-serif;
 }
 
 .line::after {
   content: "";
-  background-color: #FFF;
+  background-color: var(--primary-collor);
   display: block;
   height: 5px;
   width: 100%;
@@ -175,6 +179,10 @@ menu h1 a{
   width: 37rem;
   height: 19rem;
   cursor: pointer;
+}
+.noticia:hover{
+  transform: scale(1.1);
+  transition: all .4s;
 }
 .carousel-inner{
   height: 50rem;
@@ -237,6 +245,12 @@ menu h1 a{
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px,
+   rgba(0, 0, 0, 0.12) 0px 4px 6px,
+   rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+   background-color: rgb(206, 231, 252);
+
+
 }
 .equipes-content{
   display: flex;
@@ -244,7 +258,7 @@ menu h1 a{
   max-width: 120rem;
   justify-content: center;
   flex-direction: column;
-  
+  border-radius: 15px 50px 30px;
 }
 
 .equipes-content-img{
@@ -274,6 +288,7 @@ menu h1 a{
   width: 35rem;
   position: relative;
   cursor: pointer;
+  
 }
 .equipe-container:hover{
   transform: scale(0.9);
@@ -320,6 +335,7 @@ menu h1 a{
 .footer-contain{
   box-sizing: border-box;
   letter-spacing: 1px;
+  background-color: var(--primary-collor);
 }
 .footer{
   width: 100%;
@@ -424,5 +440,5 @@ li {
     padding: 3rem 2rem;
   }
 }
-
 }
+
