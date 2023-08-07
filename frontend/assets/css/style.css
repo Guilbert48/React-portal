@@ -172,15 +172,37 @@ h1{
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px,
   rgba(0, 0, 0, 0.12) 0px 4px 6px,
   rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  border-radius: 15px 50px;
+  
 
 }
-.noticias{
-  height: 30rem;
+.noticias-teste{
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
+  justify-content:center ;
+  gap: .5rem;
+}
+
+.main-noticia{
+  display: flex;
+  justify-content: start;
+  background-color: #020202;
+  width: 100%;
+  height: 58rem;
+  
+  margin-top: 20px;
+}
+.section-noticias{
+  display: flex;
+  flex-direction: column;
+}
+
+.noticias{
+  margin-right: 1rem;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  
 }
 .noticias img{
   width: 37rem;
@@ -188,9 +210,12 @@ h1{
   cursor: pointer;
 }
 .noticia:hover{
-  transform: scale(1.1);
-  transition: all .4s;
-  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  transform: scale(0.9);
+  transition: all .3s;
+  box-shadow: rgba(87, 143, 217, 0.4) 5px 5px,
+   rgba(119, 54, 233, 0.3) 10px 10px, rgba(46, 17, 238, 0.2)
+   15px 15px, rgba(5, 74, 103, 0.1) 20px 20px,
+    rgba(85, 98, 157, 0.05) 25px 25px;
 }
 .carousel-inner{
   height: 50rem;
