@@ -47,9 +47,7 @@ h1{
   padding: 0;
   box-sizing: border-box;
 }
-.header{
-  background-color: #1f1a3b;
-}
+
 .hamburguer i{
   color: aliceblue;
   font-size: 3.3rem;
@@ -401,6 +399,10 @@ h1{
   justify-content: space-between;
 }
 .contact-container .contact-content .left-side{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 25%;
   height: 100%;
   position: relative;
@@ -434,6 +436,14 @@ h1{
   margin: 14px;
   text-align: center;
 }
+.contact-content .left-side .details{
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+.contact-content .left-side .text-one{
+  max-width: 100%;
+  word-wrap: break-word;
+}
 .contact-container .contact-content .right-side{
   width: 75%;
   margin-left: 7.5rem;
@@ -464,6 +474,10 @@ h1{
   min-height: 11rem;
   margin-top: 6px;
 }
+.right-side .button-contact{
+  display: inline-block;
+  margin-top: 12px;
+}
 .right-side .button-contact input[type="button"]{
   color: #fff;
   font-size: 18px;
@@ -478,6 +492,34 @@ h1{
   background: #5029bc;
   transition: all .8s;
 }
+@media (max-width: 950px){
+  .contact-container{
+    width: 90%;
+    padding: 30px 35px 40px 35px;
+  }
+}
+@media (max-width: 820px){
+  .contact-container{
+    margin: 40px 0;
+    height: 100%;
+  }
+  .contact-container .contact-content{
+    flex-direction: column-reverse;
+  }
+  .contact-container .contact-content .left-side{
+    width: 100%;
+    flex-direction: row;
+    margin-top: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .contact-container .contact-content .right-side{
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+
 .footer-contain{
   box-sizing: border-box;
   letter-spacing: 1px;
