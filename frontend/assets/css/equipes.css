@@ -1,18 +1,88 @@
-.page1{
-    background-color: rgb(106, 184, 252);
+body{
+    margin: 0;
+    padding: 0;
+    color: #242424;
+    font-family: sans-serif;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
-.page2{
-    background-color: rgb(81, 141, 193);
+h1,h2,h3,h4{
+    font-weight: 700;
 }
-.page3{
-    background-color: rgb(247, 162, 250);
+.equipes-wrapper{
+    width: 100%;
+    margin: 0 auto;
 }
-.page4{
-    background-color: rgb(0, 0, 0);
+main{
+    display: block;
+    background-color: aliceblue;
 }
-.page5{
-    background-color: rgb(51, 245, 58);
+.container-parallax{
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
-.page6{
-    background-color: rgb(0, 124, 232);
+section.module p{
+    margin-bottom: 40px;
+     
+}
+section.module:last-child{
+    margin-bottom: 0;
+}
+section.module h2{
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+section.module.content-parallax{
+    padding: 40px 0;
+    background: #ece7d5;
+}
+section.module.parallax{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+section.module.parallax:after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 8;
+    background: linear-gradient(to bottom, rgba(0, 0, 0,0) 0, rgba(0, 0, 0, 0,) 40%, #000 100%) ;
+}
+
+section.module.parallax h1{
+    color: #fff;
+    text-align: center;
+    font-size: 78px;
+    z-index: 50;
+    text-transform: uppercase;
+}
+section.module.parallax-1{
+    background-image: url('../../assets/img/img3.jpg');
+}
+section.parallax-2{
+    background-image: url('../../assets/img/img3.jpg'); 
+}
+section.parallax-3{
+    background-image: url('../../assets/img/img3.jpg'); 
+}
+section.parallax-4{
+    background-image: url('../../assets/img/img3.jpg'); 
+}
+section.parallax-5{
+    background-image: url('../../assets/img/img3.jpg'); 
+}
+section.parallax-6{
+    background-image: url('../../assets/img/img3.jpg'); 
 }
