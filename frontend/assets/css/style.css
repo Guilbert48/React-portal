@@ -478,6 +478,7 @@ h1{
   display: inline-block;
   margin-top: 12px;
 }
+
 .right-side .button-contact input[type="button"]{
   color: #fff;
   font-size: 18px;
@@ -487,6 +488,7 @@ h1{
   border-radius: 10px;
   padding: 8px 16px;
 }
+
 .button-contact input[type="button"]:hover{
   transform: scale(1.1);
   background: #5029bc;
