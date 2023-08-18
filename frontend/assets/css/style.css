@@ -48,9 +48,54 @@ h1{
   padding: 0;
   box-sizing: border-box;
 }
+.src-contain{
+  width: 300px;
+  height: 40px;
+  position: relative;
+}
+.src-content{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background-color: aliceblue;
+ height: 40px;
+ border-radius: 40px;
+ position: absolute;
+ padding: 10px;
+}
+.src-content i{
+  color: var(--primary-collor);
+}
+.src-content input{
+  border-radius: 40px;
+  background: none;
+  border: none;
+  background-color: aliceblue;
+  width: 0;
+}
+.src-content input:focus{
+  outline: none;
+  width: 200px;
+  padding: 0 7px;
+}
 
-.search-content{
-  
+.src-content i{
+  color: rgb(21, 21, 21);
+  padding: 10px;
+}
+.src-button{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.src-contain:hover > .src-content input{
+  width: 200px;
+  transition: .5s;
+  padding: 0 7px;
 }
 
 .hamburguer i{
