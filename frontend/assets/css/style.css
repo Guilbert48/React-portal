@@ -48,10 +48,13 @@ h1{
   padding: 0;
   box-sizing: border-box;
 }
+
+
 .src-contain{
   width: 300px;
   height: 40px;
   position: relative;
+  
 }
 .src-content{
  display: flex;
@@ -175,6 +178,18 @@ h1{
   padding-top: 0;
   padding-bottom: 0;
   
+}
+.teste{
+  z-index: 3;
+  background-color: var(--main-collor);
+  position: absolute;
+  width: 50px;
+  height: 50rem;
+  top: 30%;
+  position: fixed;
+}
+.nav_bar{
+  max-height: 102px;
 }
 .menu-content nav ul li{
   color: #020202;
