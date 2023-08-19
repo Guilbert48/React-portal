@@ -4,7 +4,7 @@
 :root{
   --main-collor: #3e2093;
   --primary-collor: #1f1a3b;
-  --secundary-collor: #256061;
+  --secundary-collor: #00eaff;
   --hover-collor: #022a30;
   --white-collor: #fff;
   --light-gray-collor: #eee;
@@ -101,10 +101,68 @@ h1{
   padding: 0 7px;
 }
 
+
+
 .hamburguer i{
   color: aliceblue;
   font-size: 3.3rem;
   cursor: pointer;
+}
+.side-menu{
+  display: flex;
+  flex-direction: column;
+  z-index: 3;
+  background-color: var(--main-collor);
+  position: absolute;
+  height: 100%;
+  top: 3rem;
+  width: 30rem;
+  transition: 0.5s ease;
+  transform: translateX(0);
+  align-items: center;
+}
+.side-menu ol{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.side-menu ol a{
+  text-decoration: none;
+  color: #fff;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  padding: 15px 10px;
+  position: relative;
+  transition: 0.3s;
+  overflow: hidden;
+  text-transform: capitalize;
+}
+.side-menu ol li{
+  display: block;
+  width: 100%;
+  font-size: 20px;
+}
+.head-side{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #fff;
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 30px;
+  letter-spacing: 3px;
+
+}
+.side-menu a{
+  border-radius: 10px;
+}
+.side-menu a:hover{
+  background-color: var(--light-gray-collor);
+  color: var(--main-collor);
+  letter-spacing: 5px;
+  
 }
 
 .main-bg{
@@ -178,15 +236,6 @@ h1{
   padding-top: 0;
   padding-bottom: 0;
   
-}
-.teste{
-  z-index: 3;
-  background-color: var(--main-collor);
-  position: absolute;
-  width: 50px;
-  height: 50rem;
-  top: 30%;
-  position: fixed;
 }
 .nav_bar{
   max-height: 102px;
